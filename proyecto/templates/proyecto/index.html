@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "proyecto/styles.css" %}">
+    <title>Familia</title>
+</head>
+<body>
+    <h1>Mi familia</h1>   
+    <h3>Esta es mi familia</h3> 
+    <table>
+        <thead>    
+            <td>Nombre</td>
+            <td>Nacimiento</td>
+            <td>Edad</td>
+            <td>Trabajo</td>
+        </thead> 
+        {% for familiar in proyecto_familiar %}
+        <tr>
+            <td>{{familiar.Nombre}} </td>
+            <td>{{familiar.Nacimiento}}</td>
+            <td>{{familiar.Edad}}</td>
+            <td>{{familiar.Trabajo}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+ 
+
+</body>
+</html>
