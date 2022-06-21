@@ -6,5 +6,5 @@ from .models import familiar
 
 def index(request):
     Familiar = familiar.objects.all()
-    ctx = {"familiar": familiar, }
+    ctx = {"Familiar": Familiar, }
     return render (request, "proyecto/index.html", ctx)

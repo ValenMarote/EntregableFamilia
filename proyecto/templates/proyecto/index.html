@@ -18,12 +18,12 @@
             <td>Edad</td>
             <td>Trabajo</td>
         </thead> 
-        {% for familiar in proyecto_familiar %}
+        {% for persona in Familiar %}
         <tr>
-            <td>{{familiar.Nombre}} </td>
-            <td>{{familiar.Nacimiento}}</td>
-            <td>{{familiar.Edad}}</td>
-            <td>{{familiar.Trabajo}}</td>
+            <td>{{persona.Nombre}} </td>
+            <td>{{persona.Nacimiento}}</td>
+            <td>{{persona.Edad}}</td>
+            <td>{{persona.Trabajo}}</td>
         </tr>
         {% endfor %}
         
